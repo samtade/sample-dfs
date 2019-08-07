@@ -7,9 +7,11 @@ This is a simple depth first search with some utilities
 such as `findCheapestCost`, `findNumberOfPossibleRoute`,
 and `findTotalCost`
 
-### Example
+## Quick example
 
-```$xslt
+### Node
+
+```javascript
 import DeliveryService from '../../src/main';
 
 const samplePaths = [
@@ -35,6 +37,47 @@ const numberOfRoute = service.findNumberOfPossibleRoute('E', 'E', {
 const totalCost = service.findTotalCost(['E', 'A', 'C', 'F']);
 
 const cheapestCost = service.findCheapestCost('E', 'E');
-
 ```
 
+## Methods
+
+### findNumberOfPossibleRoute(start, dest, option)
+
+fins all possible route start to destination with option that can let you be able to set maximum visited path,
+maximum revisit the same node, and maximum cost.
+
+```
+// first node to traverse through
+start: string
+
+// last node to traverse
+dest: string
+
+// option to find node
+optionx: {
+    maxVisit: number,
+    maxRevisit: number,
+    maxCost: number
+}
+```
+
+### findTotalCost(visitedNodes)
+
+take array of node, then it returns the total cost to traverse all the nodes consequently
+
+```
+// array of node to visit
+visitedNodes: string[]
+```
+
+### findCheapestCost(start, dest)
+
+find the cheapest cost from start to destination
+
+```
+// first node to traverse through
+start: string
+
+// last node to traverse
+dest: string
+```

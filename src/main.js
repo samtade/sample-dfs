@@ -75,7 +75,7 @@ class DeliveryService {
   /**
    * find the cheapest cost from start to destination
    *
-   * @param {string} start Starting node
+   * @param {string} start Start node
    * @param {string} dest Destination node
    *
    * @returns {number} The cheapest cost
@@ -90,7 +90,7 @@ class DeliveryService {
   /**
    * find a number of possible routes
    *
-   * @param {string} start Root node name
+   * @param {string} start Start node name
    * @param {string} dest Destination node name
    * @param {Object} [option] Routing option
    * @param {number} [option.maxVisit] Maximum path that it can visit

@@ -1,0 +1,26 @@
+{
+  "name": "delivery-service",
+  "version": "0.1.1",
+  "description": "a service that help you find to the best possible solution for delivery",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup --config",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\"",
+    "checkFormat": "prettier --check \"src/**/*.js\"  \"tests/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jest": "^22.14.1",
+    "esm": "^3.2.25",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.19.3"
+  }
+}

@@ -1,6 +1,7 @@
 # Sample-DFS
 
-[![Build Status](https://api.cirrus-ci.com/github/samtade/sample-dfs.svg)](https://cirrus-ci.com/github/samtade/sample-dfs)
+[![Build Status](https://api.cirrus-ci.com/github/samtade/sample-dfs.svg?task=test)](https://cirrus-ci.com/github/samtade/sample-dfs)
+[![Coverage Status](https://coveralls.io/repos/github/samtade/sample-dfs/badge.svg?branch=master)](https://coveralls.io/github/taniarascia/chip8?branch=master)
 
 This is a simple depth first search with some utilities
 such as `findCheapestCost`, `findNumberOfPossibleRoute`,

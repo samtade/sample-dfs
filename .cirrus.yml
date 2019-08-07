@@ -14,3 +14,5 @@ test_task:
       lint_script: yarn run lint
     - name: Test
       test_script: yarn run test
+    - name: Coverage
+      coverage_script: yarn run coveralls

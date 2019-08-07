@@ -1,9 +1,12 @@
 # editor
 .idea
 
-# parcel output
+# output
 .cache
 dist
 
 # node modules
 node_modules
+
+# test coverage output
+coverage

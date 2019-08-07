@@ -70,6 +70,17 @@ describe('DeliveryService', () => {
       expect(cost).toBe(expectedCost);
     });
 
+    describe('when no map', () => {
+      it('break', () => {
+        const service = new DeliveryService();
+        service.map = new Map();
+
+        const result = service.findTotalCost(['Z', 'Z']);
+
+        expect(result).toBe('No Such Route');
+      });
+    });
+
     describe('when input an invalid route', () => {
       test.each([{}, null, 'ABE'])('thrown an error for %p', invalidRoute => {
         expect(() => service.findTotalCost(invalidRoute)).toThrow(/Invalid/);

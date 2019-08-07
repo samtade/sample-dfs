@@ -1,9 +1,16 @@
 container:
   image: node:latest
 
-test_task:
+task:
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat yarn.lock
     populate_script: yarn install
-  test_script: yarn run test
+
+  matrix:
+    - name: Format
+      check_script: yarn run checkFormat
+    - name: Lint
+      lint_script: yarn run lint
+    - name: Test
+      test_script: yarn run test

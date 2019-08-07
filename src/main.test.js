@@ -72,7 +72,7 @@ describe('DeliveryService', () => {
 
     describe('when input an invalid route', () => {
       test.each([{}, null, 'ABE'])('thrown an error for %p', invalidRoute => {
-        expect(() => service.findTotalCost(invalidRoute)).toThrowError(/Invalid/);
+        expect(() => service.findTotalCost(invalidRoute)).toThrow(/Invalid/);
       });
     });
   });

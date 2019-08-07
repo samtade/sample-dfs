@@ -12,7 +12,7 @@ class DeliveryService {
 
     this.map = mapCreator.createMap(paths);
 
-    this.findCost.bind(this);
+    this.findTotalCost.bind(this);
     this.findCheapestCost.bind(this);
     this.findNumberOfPossibleRoute.bind(this);
     this.findPossibleRoutes.bind(this);
@@ -112,7 +112,7 @@ class DeliveryService {
    * @param {string[]} nodes Array of nodes to be calculated
    * @return {number|string} Total cost or error message
    */
-  findCost(nodes) {
+  findTotalCost(nodes) {
     // handle invalid route
     if (!nodes || !Array.isArray(nodes)) {
       throw new Error(`Invalid route: ${nodes}`);

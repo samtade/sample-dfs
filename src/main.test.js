@@ -56,7 +56,7 @@ describe('DeliveryService', () => {
     );
   });
 
-  describe('findCost', () => {
+  describe('findTotalCost', () => {
     test.each([
       [4, ['A', 'B', 'E']],
       [10, ['A', 'D']],
@@ -65,14 +65,14 @@ describe('DeliveryService', () => {
       [0, ['A', 'A', 'A', 'A']],
       ['No Such Route', ['A', 'D', 'F']],
     ])('get %i for route %p', (expectedCost, nodes) => {
-      const cost = service.findCost(nodes);
+      const cost = service.findTotalCost(nodes);
 
       expect(cost).toBe(expectedCost);
     });
 
     describe('when input an invalid route', () => {
       test.each([{}, null, 'ABE'])('thrown an error for %p', invalidRoute => {
-        expect(() => service.findCost(invalidRoute)).toThrowError(/Invalid/);
+        expect(() => service.findTotalCost(invalidRoute)).toThrowError(/Invalid/);
       });
     });
   });

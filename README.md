@@ -1,5 +1,7 @@
 # Sample-DFS
 
+[![Build Status](https://api.cirrus-ci.com/github/samtade/sample-dfs.svg)](https://cirrus-ci.com/github/samtade/sample-dfs)
+
 This is a simple depth first search with some utilities
 such as `findCheapestCost`, `findNumberOfPossibleRoute`,
 and `findTotalCost`

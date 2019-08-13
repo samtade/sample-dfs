@@ -14,7 +14,7 @@ class MapCreator {
       const matches = this.pathRegex.exec(path);
       const start = matches[1];
       const dest = matches[2];
-      const cost = parseInt(matches[3]);
+      const cost = parseInt(matches[3], 10);
 
       if (!map.get(start)) {
         map.set(start, new Map([[dest, cost]]));

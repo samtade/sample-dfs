@@ -1,5 +1,6 @@
 # Sample-DFS
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/36bcb79666a444a88ce4cf5eaadc40f6)](https://app.codacy.com/app/samtade/sample-dfs?utm_source=github.com&utm_medium=referral&utm_content=samtade/sample-dfs&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://api.cirrus-ci.com/github/samtade/sample-dfs.svg?task=test)](https://cirrus-ci.com/github/samtade/sample-dfs)
 [![Coverage Status](https://coveralls.io/repos/github/samtade/sample-dfs/badge.svg?branch=master)](https://coveralls.io/github/samtade/sample-dfs?branch=master)
 
